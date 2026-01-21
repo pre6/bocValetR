@@ -16,10 +16,10 @@ The package will implement a small but complete API client for the Valet service
 
 Functions to explore what data is available in the Valet system.
 
-boc_list_series()
+`boc_list_series()`
 Lists all available individual time series, including their IDs, labels, descriptions, frequencies, and units.
 
-boc_list_groups()
+`boc_list_groups()`
 Lists all available groups, which are curated collections of related time series (e.g. exchange rates, inflation indicators, interest rates).
 
 These functions allow users to discover datasets without leaving R.
@@ -28,10 +28,10 @@ These functions allow users to discover datasets without leaving R.
 
 Functions to download actual time series observations.
 
-boc_get_series(series_id, start_date = NULL, end_date = NULL)
+`boc_get_series(series_id, start_date = NULL, end_date = NULL)`
 Downloads observations for a specific series ID (e.g. "FXUSDCAD" or "V39079") and returns a tidy data frame.
 
-boc_get_group(group_name, start_date = NULL, end_date = NULL)
+`boc_get_group(group_name, start_date = NULL, end_date = NULL)`
 Downloads observations for all series contained in a group (e.g. "FX_RATES_DAILY").
 
 Both functions will support optional date filtering and return data in a consistent tidy format.
@@ -41,8 +41,8 @@ Both functions will support optional date filtering and return data in a consist
 
 Optional helper functions for usability:
 
-boc_search_series(keyword)
+`boc_search_series(keyword)`
 Searches the series catalog by keyword (e.g. "inflation", "overnight rate").
 
-boc_search_groups(keyword)
+`boc_search_groups(keyword)`
 Searches available groups by keyword.
