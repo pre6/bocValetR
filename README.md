@@ -50,7 +50,12 @@ Both functions will support optional date filtering and return data in a consist
 Optional helper functions for usability:
 
 `boc_search_series(keyword)`
+
 Searches the series catalog by keyword (e.g. "inflation", "overnight rate").
 
+
 `boc_search_groups(keyword)`
+
 Searches available groups by keyword.
+
+
