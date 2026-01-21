@@ -20,9 +20,11 @@ Functions to explore what data is available in the Valet system.
 
 Lists all available individual time series, including their IDs, labels, descriptions, frequencies, and units.
 
+
 `boc_list_groups()`
 
 Lists all available groups, which are curated collections of related time series (e.g. exchange rates, inflation indicators, interest rates).
+
 
 These functions allow users to discover datasets without leaving R.
 
@@ -34,9 +36,11 @@ Functions to download actual time series observations.
 
 Downloads observations for a specific series ID (e.g. "FXUSDCAD" or "V39079") and returns a tidy data frame.
 
+
 `boc_get_group(group_name, start_date = NULL, end_date = NULL)`
 
 Downloads observations for all series contained in a group (e.g. "FX_RATES_DAILY").
+
 
 Both functions will support optional date filtering and return data in a consistent tidy format.
 
